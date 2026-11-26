@@ -1,0 +1,27 @@
+Rows: 3150, columns: 14, missing values: 0
+
+Overall churn rate: 15.7% (495 churned)
+
+Churn rate by complains: 0=10.1%, 1=83.0%
+
+Churn rate by tariff_plan: 1=16.8%, 2=2.4%
+
+Churn rate by status: 1=5.3%, 2=47.3%
+
+Median by churn (0/1):
+churn                          0        1
+seconds_of_use           3530.00  1182.00
+frequency_of_use           63.00    25.00
+frequency_of_sms           25.00     9.00
+distinct_called_numbers    23.00    10.00
+customer_value            268.07    96.84
+subscription_length        35.00    35.00
+call_failure                6.00     5.00
+
+Correlation with churn (top 6):
+complains                  0.532
+status                     0.499
+frequency_of_use          -0.303
+seconds_of_use            -0.299
+customer_value            -0.289
+distinct_called_numbers   -0.279

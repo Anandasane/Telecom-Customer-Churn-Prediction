@@ -1,0 +1,5 @@
+features,roc_auc,pr_auc
+all features,0.995,0.971
+minus status,0.994,0.97
+minus complains,0.993,0.964
+minus status & complains,0.993,0.962

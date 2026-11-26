@@ -1,0 +1,104 @@
+{
+  "full": {
+    "cv": {
+      "Baseline (majority)": {
+        "roc_auc": 0.5,
+        "average_precision": 0.157,
+        "f1": 0.0,
+        "recall": 0.0,
+        "precision": 0.0
+      },
+      "Logistic Regression": {
+        "roc_auc": 0.937,
+        "average_precision": 0.753,
+        "f1": 0.652,
+        "recall": 0.879,
+        "precision": 0.519
+      },
+      "Random Forest": {
+        "roc_auc": 0.985,
+        "average_precision": 0.913,
+        "f1": 0.875,
+        "recall": 0.902,
+        "precision": 0.851
+      },
+      "XGBoost": {
+        "roc_auc": 0.989,
+        "average_precision": 0.948,
+        "f1": 0.876,
+        "recall": 0.919,
+        "precision": 0.837
+      }
+    },
+    "test": {
+      "roc_auc": 0.9945975765184805,
+      "pr_auc": 0.9710774037323361,
+      "precision": 0.8545454545454545,
+      "recall": 0.9494949494949495,
+      "f1": 0.8995215311004785,
+      "threshold": 0.4499999999999999,
+      "test_size": 630,
+      "test_churners": 99
+    },
+    "best_params": {
+      "clf__subsample": 0.7,
+      "clf__reg_lambda": 10,
+      "clf__n_estimators": 500,
+      "clf__min_child_weight": 1,
+      "clf__max_depth": 5,
+      "clf__learning_rate": 0.05,
+      "clf__colsample_bytree": 0.8
+    }
+  },
+  "early_warning_no_status": {
+    "cv": {
+      "Baseline (majority)": {
+        "roc_auc": 0.5,
+        "average_precision": 0.157,
+        "f1": 0.0,
+        "recall": 0.0,
+        "precision": 0.0
+      },
+      "Logistic Regression": {
+        "roc_auc": 0.934,
+        "average_precision": 0.757,
+        "f1": 0.626,
+        "recall": 0.856,
+        "precision": 0.493
+      },
+      "Random Forest": {
+        "roc_auc": 0.98,
+        "average_precision": 0.876,
+        "f1": 0.838,
+        "recall": 0.848,
+        "precision": 0.828
+      },
+      "XGBoost": {
+        "roc_auc": 0.986,
+        "average_precision": 0.937,
+        "f1": 0.87,
+        "recall": 0.922,
+        "precision": 0.825
+      }
+    },
+    "test": {
+      "roc_auc": 0.9942361467785197,
+      "pr_auc": 0.9696787448662713,
+      "precision": 0.8482142857142857,
+      "recall": 0.9595959595959596,
+      "f1": 0.9004739336492891,
+      "threshold": 0.5299999999999999,
+      "test_size": 630,
+      "test_churners": 99
+    },
+    "best_params": {
+      "clf__subsample": 0.7,
+      "clf__reg_lambda": 10,
+      "clf__n_estimators": 500,
+      "clf__min_child_weight": 1,
+      "clf__max_depth": 5,
+      "clf__learning_rate": 0.05,
+      "clf__colsample_bytree": 0.8
+    }
+  }
+}

@@ -1,0 +1,18 @@
+At the train-selected threshold (0.53) the total cost is 93% lower than doing nothing under the ASSUMED FN:FP cost ratio 5:1. (Test-set cost minimum is at ~0.34; shown on the plot for illustration only, not used for the model.)
+
+Top SHAP features:
+frequency_of_use        0.914
+seconds_of_use          0.911
+complains_1             0.741
+subscription_length     0.692
+customer_value          0.644
+avg_seconds_per_call    0.623
+failure_rate            0.606
+charge_amount           0.496
+
+Ablation (same tuned XGBoost, refit):
+                features  roc_auc  pr_auc
+            all features    0.995   0.971
+            minus status    0.994   0.970
+         minus complains    0.993   0.964
+minus status & complains    0.993   0.962
